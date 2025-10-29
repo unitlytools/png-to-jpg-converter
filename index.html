@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Professional PNG to JPG Converter — drag & drop, preview, quality slider, background control and download. Mobile-friendly and responsive." />
+  <title>PNG → JPG Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="tool-wrap">
+    <div class="card">
+      <h1>PNG → JPG Converter</h1>
+      <p class="lead">Drag & drop or choose PNG images, adjust quality and background, preview and download JPG. Mobile-friendly.</p>
+
+      <div class="row">
+        <div class="file-area">
+          <div class="file-input">
+            <label class="choose-btn" for="fileInput">Choose PNG</label>
+            <input id="fileInput" type="file" accept="image/png" multiple />
+            <div class="filename" id="fileName">No file chosen</div>
+          </div>
+
+          <div class="dropzone" id="dropzone">
+            Drop PNG files here or click to select
+            <small>Supports multiple files — each converted separately. Transparent areas will be filled with chosen background color.</small>
+          </div>
+        </div>
+
+        <div style="min-width:160px; display:flex; flex-direction:column; gap:8px">
+          <div class="options">
+            <div class="opt">
+              <label>Quality <span class="muted">(0.1 - 1.0)</span></label>
+              <input id="qualityRange" class="range" type="range" min="0.1" max="1" step="0.05" value="0.9" />
+              <div class="muted" style="margin-top:6px">Value: <span id="qualityVal">0.90</span></div>
+            </div>
+
+            <div class="opt">
+              <label>Background</label>
+              <div class="bgcolor">
+                <input id="bgColor" type="color" value="#ffffff" />
+                <div class="muted">Choose fill color for transparency</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-convert" id="convertBtn">Convert Selected</button>
+        <button class="btn btn-download" id="downloadAllBtn">Download All ZIP</button>
+        <button class="btn btn-copy" id="copyBtn">Copy First JPG (base64)</button>
+        <button class="btn btn-clear" id="clearBtn">Clear</button>
+      </div>
+
+      <div class="preview-wrap" id="previewWrap" aria-live="polite"></div>
+      <div style="margin-top:14px" class="muted">Tip: Use <span class="kbd">Shift</span> to select multiple files in the file chooser.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
