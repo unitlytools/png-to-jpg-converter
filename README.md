@@ -39,9 +39,9 @@ Try it here 👇
 ---
 
 ## 🌍 Connect With Me
-🔗 **Website:** [YourWebsite.com](https://unitlytools.blogspot.com/)  
-💬 **Telegram:** [Your Telegram Channel](https://t.me/Unitlylab)  
-📸 **Instagram:** [@yourinstagram](https://instagram.com/unitly.lab)
+🔗 **Website:** [Unitly Tools](https://unitlytools.blogspot.com/)  
+💬 **Telegram:** [Unitly Lab](https://t.me/Unitlylab)  
+📸 **Instagram:** [Unitly Social](https://instagram.com/unitly.lab)
 
 
 ---
